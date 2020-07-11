@@ -1,0 +1,55 @@
+body {
+  margin: 0;
+}
+/* Buttons  */
+.btn {
+  background-color: #1dafed;
+  padding: 10px;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+/* NAV */
+
+.hero {
+  background-image: url("https://i.imgur.com/rYbrT11.png");
+  min-height: 50rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  position: absolute;
+  margin: 20px;
+  width: auto;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style-type: none;
+  overflow: hidden;
+}
+
+nav li {
+  padding-right: 15px;
+  color: #ffffff;
+}
+
+.main-container {
+  margin: 0 auto;
+  max-width: 1080px;
+}
+
+.main-container p {
+  color: #393939;
+  font-size: 16px;
+  text-align: right;
+}
