@@ -1,19 +1,36 @@
 body {
   margin: 0;
+  font-family: Helvetica, sans-serif;
 }
 /* Buttons  */
 .btn {
   background-color: #1dafed;
-  padding: 10px;
+  padding: 10px 20px 10px 17px;
+}
+
+.btn:hover {
+  background-color: #ffffff;
+  color: #1dafed;
+  cursor: pointer;
+}
+
+.btn:hover a {
+  color: #1dafed;
+}
+
+.btn a {
   text-decoration: none;
   color: #ffffff;
+}
+
+nav a {
 }
 
 /* NAV */
 
 .hero {
   background-image: url("https://i.imgur.com/rYbrT11.png");
-  min-height: 50rem;
+  min-height: 47rem;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -24,10 +41,11 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 20px;
   position: absolute;
-  margin: 20px;
-  width: auto;
+  width: 100%;
+  height: 50px;
+  padding-top: 8px;
+  margin: 0 3.7%;
 }
 
 nav ul {
@@ -36,11 +54,26 @@ nav ul {
   justify-content: center;
   list-style-type: none;
   overflow: hidden;
+  margin: 0;
+  padding: 0;
 }
 
 nav li {
-  padding-right: 15px;
+  padding-right: 23px;
   color: #ffffff;
+}
+
+nav li a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+nav li a:hover {
+  color: #1dafed;
+}
+
+nav li:first-child {
+  margin-right: 24px;
 }
 
 .main-container {
@@ -48,8 +81,30 @@ nav li {
   max-width: 1080px;
 }
 
+.intro-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 .main-container p {
   color: #393939;
   font-size: 16px;
   text-align: right;
+  max-width: 640px;
+  font-weight: 300;
+  line-height: 26px;
+}
+
+section.info {
+  position: relative;
+}
+
+section.slide-bg {
+  background-image: url(https://i.imgur.com/LGCmDwF.png);
+  min-height: 29rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
 }
