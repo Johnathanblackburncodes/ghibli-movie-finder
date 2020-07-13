@@ -1,6 +1,12 @@
 body {
   margin: 0;
+  display: flex;
+  flex-direction: column;
   font-family: Helvetica, sans-serif;
+}
+
+main {
+  height: 100vh;
 }
 /* Buttons  */
 .btn {
@@ -21,9 +27,6 @@ body {
 .btn a {
   text-decoration: none;
   color: #ffffff;
-}
-
-nav a {
 }
 
 /* NAV */
@@ -85,6 +88,7 @@ nav li:first-child {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  justify-content: flex-end;
 }
 
 .main-container p {
@@ -101,10 +105,53 @@ section.info {
 }
 
 section.slide-bg {
-  background-image: url(https://i.imgur.com/LGCmDwF.png);
-  min-height: 29rem;
+  background-color: red;
+  background-image: url("../img/ghiblicollection.png");
+  max-height: 29rem;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
+  mix-blend-mode: multiply;
+}
+
+.slide-bg h2 {
+  color: white;
+}
+
+.slide-bg .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 138px;
+}
+
+.slick-slide > div {
+  transform: scale(0.8);
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.slick-center > div {
+  transform: scale(1);
+}
+.slider__item > img {
+  width: 100%;
+  height: auto;
+}
+
+.api-temp {
+  padding-top: 400px;
+}
+
+.slick-prev {
+  position: absolute;
+  left: 0;
+  bottom: 51%;
+  z-index: 99;
+}
+
+.slick-next {
+  position: absolute;
+  right: 0;
+  bottom: 51%;
+  z-index: 99;
 }
