@@ -11,7 +11,7 @@ main {
 /* Buttons  */
 .btn {
   background-color: #1dafed;
-  padding: 10px 20px 10px 17px;
+  padding: 1rem 2rem 1rem 1.7rem;
 }
 
 .btn:hover {
@@ -33,11 +33,18 @@ main {
 
 .hero {
   background-image: url("https://i.imgur.com/rYbrT11.png");
-  min-height: 47rem;
+  max-height: 770px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
+}
+
+.hero::before {
+  content: "";
+  display: block;
+  height: 0;
+  padding-top: 61%;
 }
 
 nav {
@@ -46,9 +53,10 @@ nav {
   justify-content: space-between;
   position: absolute;
   width: 100%;
-  height: 50px;
-  padding-top: 8px;
+  height: 5rem;
+  padding-top: 0.8rem;
   margin: 0 3.7%;
+  z-index: 999;
 }
 
 nav ul {
@@ -79,16 +87,28 @@ nav li:first-child {
   margin-right: 24px;
 }
 
+nav .logo {
+  position: absolute;
+  right: 5%;
+  top: 0%;
+  width: 17rem;
+  height: 10rem;
+}
+/* body  */
+
 .main-container {
   margin: 0 auto;
   max-width: 1080px;
 }
+
+/* intro  */
 
 .intro-wrap {
   display: flex;
   align-items: center;
   justify-content: space-between;
   justify-content: flex-end;
+  position: relative;
 }
 
 .main-container p {
@@ -102,7 +122,42 @@ nav li:first-child {
 
 section.info {
   position: relative;
+  padding-bottom: 18px;
 }
+
+.card-sticky {
+  position: absolute;
+  height: 324px;
+  width: 402px;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  box-shadow: 0px 30px 50px rgba(0, 0, 0, 0.25);
+  background: white;
+  z-index: 999;
+}
+
+.card-background {
+  background-image: url("../img/princess-mononoke-card.png");
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  height: 224px;
+}
+
+.card-text {
+  padding: 25px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.card-text h3 {
+  padding-left: 15px;
+}
+/* slide show  */
 
 section.slide-bg {
   background-color: red;
@@ -112,7 +167,6 @@ section.slide-bg {
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-  mix-blend-mode: multiply;
 }
 
 .slide-bg h2 {
@@ -139,7 +193,11 @@ section.slide-bg {
 }
 
 .api-temp {
-  padding-top: 400px;
+  padding-top: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #eeeeee;
 }
 
 .slick-prev {
@@ -154,4 +212,29 @@ section.slide-bg {
   right: 0;
   bottom: 51%;
   z-index: 99;
+}
+
+.slider__item p {
+  position: absolute;
+  bottom: -2%;
+  left: -67%;
+  opacity: 0;
+}
+
+.slider-container {
+  padding-top: 40px;
+}
+
+footer {
+  height: 100px;
+  width: 100%;
+  background-color: #1dafed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
 }

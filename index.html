@@ -4,8 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ghibli Movie Finder</title>
-    <link rel="stylesheet" type="text/css" href="slick/slick.css" />
-    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
     <link rel="stylesheet" href="styles/style.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <link
@@ -16,22 +14,33 @@
     <script defer src="js/script.js"></script>
   </head>
   <body>
-    <header class="hero">
+    <header>
       <nav class="container">
         <ul>
           <li class="btn">
-            <a href="http://www.ghibli-museum.jp/en/">Visit Studio Ghibli</a>
+            <a href="http://www.ghibli-museum.jp/en/" target="_blank"
+              >Visit Studio Ghibli</a
+            >
           </li>
-          <li class="nav-item"><a href="#">Films</a></li>
+          <li class="nav-item"><a href="#films">Films</a></li>
           <li class="nav-item"><a href="#">History</a></li>
         </ul>
-        <img class="logo" />
+        <img class="logo" src="../ghibli-movie-web-app/img/logo.png" />
       </nav>
     </header>
     <main>
+      <!-- Roadmap: Have this Dynamic with API -->
+      <section class="hero"></section>
       <section class="info">
         <div class="main-container">
           <div class="intro-wrap">
+            <div class="card-sticky">
+              <div class="card-background"></div>
+              <div class="card-text">
+                <p>1997</p>
+                <h3>Princess Mononoke</h3>
+              </div>
+            </div>
             <div>
               <p>
                 While protecting his village from a rampaging boar-god, the
@@ -49,53 +58,112 @@
         </div>
       </section>
       <section class="slide-bg">
-        <div class="container">
+        <div class="container" id="films">
           <h2>The Studio Ghibli Collection</h2>
         </div>
+        <!-- Roadmap: Have this dynamic with the API -->
         <div class="slider-container">
           <div class="slider">
             <div class="slider__item">
-              <img src="../ghibli-movie-web-app/img/ponyo-poster.png" alt="" />
+              <img
+                src="https://www.gstatic.com/tv/thumb/v22vodart/29914/p29914_v_v8_af.jpg"
+                alt=""
+              />
             </div>
             <div class="slider__item">
-              <img src="../ghibli-movie-web-app/img/ponyo-poster.png" alt="" />
+              <img
+                src="https://www.gstatic.com/tv/thumb/v22vodart/56297/p56297_v_v8_ah.jpg"
+                alt=""
+              />
             </div>
             <div class="slider__item">
-              <img src="../ghibli-movie-web-app/img/ponyo-poster.png" alt="" />
+              <img
+                src="https://www.gstatic.com/tv/thumb/v22vodart/36095/p36095_v_v8_ac.jpg"
+                alt=""
+              />
             </div>
             <div class="slider__item">
-              <img src="../ghibli-movie-web-app/img/ponyo-poster.png" alt="" />
+              <p>Princess Mononoke</p>
+              <img
+                src="https://www.gstatic.com/tv/thumb/v22vodart/127896/p127896_v_v8_ad.jpg"
+                alt=""
+              />
             </div>
             <div class="slider__item">
-              <img src="../ghibli-movie-web-app/img/ponyo-poster.png" alt="" />
+              <img
+                src="https://www.gstatic.com/tv/thumb/v22vodart/9311/p9311_v_v8_ac.jpg"
+                alt=""
+              />
             </div>
             <div class="slider__item">
-              <img src="../ghibli-movie-web-app/img/ponyo-poster.png" alt="" />
+              <img
+                src="https://www.gstatic.com/tv/thumb/v22vodart/9384287/p9384287_v_v8_ad.jpg"
+                alt=""
+              />
             </div>
             <div class="slider__item">
-              <img src="../ghibli-movie-web-app/img/ponyo-poster.png" alt="" />
+              <img
+                src="https://www.gstatic.com/tv/thumb/v22vodart/160148/p160148_v_v8_ac.jpg"
+                alt=""
+              />
             </div>
             <div class="slider__item">
-              <img src="../ghibli-movie-web-app/img/ponyo-poster.png" alt="" />
+              <img
+                src="https://www.gstatic.com/tv/thumb/v22vodart/68228/p68228_v_v8_ac.jpg"
+                alt=""
+              />
             </div>
             <div class="slider__item">
-              <img src="../ghibli-movie-web-app/img/ponyo-poster.png" alt="" />
+              <img
+                src="https://www.gstatic.com/tv/thumb/v22vodart/172388/p172388_v_v8_ad.jpg"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+        <!-- End of Slider content  -->
+      </section>
+      <section class="api-temp"></section>
+      <section class="form">
+        <div class="main-container">
+          <form>
+            <select id="films" name="ghibli">
+              <option value="58611129-2dbc-4a81-a72f-77ddfc1b1b49"
+                >My Neighbor Totoro</option
+              >
+              <option value="2baf70d1-42bb-4437-b551-e5fed5a87abe"
+                >Castle in the Sky</option
+              >
+            </select>
+            <input type="submit" value="Search The Collection" />
+          </form>
+      </section>
+      <section class="info">
+        <div class="main-container">
+          <div class="intro-wrap">
+            <div>
+              <h3 class="title">Princess Mononoke</h3>
+              <p class="release">1997</p>
+            </div>
+            <div>
+              <p class="description">
+                While protecting his village from a rampaging boar-god, the
+                young warrior Ashitaka becomes afflicted with a deadly curse. To
+                find the cure that will save his life, he journeys deep into
+                sacred depths of the Great Forest Spirit's realm where he meets
+                San (Princess Mononoke), a girl raised by wolves. It's not long
+                before Ashitaka is caught in the middle of a battle between
+                iron-ore prospecting humans and the forest dwellers. He must
+                summon the spirit-powers and all his courage to stop man and
+                nature from destroying each other.
+              </p>
             </div>
           </div>
         </div>
       </section>
-      <section class="api-temp">
-        <!-- Data I will pull from API -->
-        <h3>Title</h3>
-        <p class="title"></p>
-        <h3>Description</h3>
-        <p class="description"></p>
-        <h3>Release Date</h3>
-        <p class="release-date"></p>
-        <h3>Poster</h3>
-        <p class="poster"></p>
-      </section>
     </main>
-    <footer></footer>
+    <footer>
+      <a href="#">Back to top</a>
+    </footer>
   </body>
 </html>

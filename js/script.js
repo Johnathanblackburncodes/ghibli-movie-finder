@@ -1,12 +1,4 @@
-// Slick Slider
-$(".slider").slick({
-  centerMode: true,
-  centerPadding: "0px",
-  slidesToShow: 5,
-  autoplay: true,
-  autoplaySpeed: 3000,
-});
-
+// Drop down selector ----
 let ghibliData, userInput;
 
 const $title = $(".title");
@@ -38,6 +30,8 @@ function render() {
   $release.html(filmData.release_date);
 }
 
+// Failed code, might use later ----
+
 // const container = $(".slider");
 
 // var request = new XMLHttpRequest();
@@ -62,3 +56,12 @@ function render() {
 //   );
 //   $(container).append(card);
 // }
+
+// Slick Slider ----
+$(".slider").slick({
+  centerMode: true,
+  centerPadding: "0px",
+  slidesToShow: 5,
+  autoplay: true,
+  autoplaySpeed: 3000,
+});
