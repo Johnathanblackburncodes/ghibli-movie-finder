@@ -4,9 +4,8 @@ body {
   flex-direction: column;
   font-family: Helvetica, sans-serif;
 }
-
 main {
-  height: 100vh;
+  height: 100%;
 }
 /* Buttons  */
 .btn {
@@ -33,7 +32,7 @@ main {
 
 .hero {
   background-image: url("https://i.imgur.com/rYbrT11.png");
-  max-height: 770px;
+  max-height: 1000px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -94,11 +93,19 @@ nav .logo {
   width: 17rem;
   height: 10rem;
 }
+
+@media screen and (max-width: 830px) {
+  nav .logo {
+    width: 10rem;
+    height: 5rem;
+  }
+}
 /* body  */
 
 .main-container {
   margin: 0 auto;
-  max-width: 1080px;
+  max-width: 1200px;
+  padding: 0 5%;
 }
 
 /* intro  */
@@ -106,9 +113,16 @@ nav .logo {
 .intro-wrap {
   display: flex;
   align-items: center;
-  justify-content: space-between;
   justify-content: flex-end;
   position: relative;
+  flex-wrap: wrap;
+}
+
+@media screen and (max-width: 1250px) {
+  .intro-wrap {
+    position: relative;
+    flex-direction: column;
+  }
 }
 
 .main-container p {
@@ -122,13 +136,13 @@ nav .logo {
 
 section.info {
   position: relative;
-  padding-bottom: 18px;
+  padding-bottom: 38px;
 }
 
 .card-sticky {
   position: absolute;
   height: 324px;
-  width: 402px;
+  width: 27rem;
   left: 0;
   display: flex;
   flex-direction: column;
@@ -136,6 +150,13 @@ section.info {
   box-shadow: 0px 30px 50px rgba(0, 0, 0, 0.25);
   background: white;
   z-index: 999;
+}
+
+@media screen and (max-width: 1250px) {
+  .card-sticky {
+    position: relative;
+    margin-bottom: 20px;
+  }
 }
 
 .card-background {
@@ -149,24 +170,36 @@ section.info {
 }
 
 .card-text {
-  padding: 25px;
+  padding: 1.5rem;
   display: flex;
   justify-content: flex-end;
 }
 
 .card-text h3 {
-  padding-left: 15px;
+  padding-left: 10px;
 }
 /* slide show  */
 
 section.slide-bg {
   background-color: red;
   background-image: url("../img/ghiblicollection.png");
-  max-height: 29rem;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
+}
+
+.slide-bg::before {
+  content: "";
+  display: block;
+  height: 0;
+  padding-top: 1%;
+}
+
+@media screen and (min-width: 1340px) {
+  .slide-bg {
+    max-height: 32rem;
+  }
 }
 
 .slide-bg h2 {
@@ -193,7 +226,7 @@ section.slide-bg {
 }
 
 .api-temp {
-  padding-top: 200px;
+  height: 18rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -237,4 +270,49 @@ footer {
 footer a {
   color: white;
   text-decoration: none;
+}
+
+section.film-info {
+  padding: 80px 0 80px 0px;
+}
+
+#root {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card {
+  margin: 1rem;
+  box-shadow: 0px 30px 50px rgba(0, 0, 0, 0.25);
+}
+
+.card p {
+  color: #393939;
+  font-size: 16px;
+  text-align: right;
+  max-width: 640px;
+  font-weight: 300;
+  line-height: 26px;
+  padding: 22px;
+}
+
+.card h3 {
+  text-align: center;
+}
+
+@media screen and (min-width: 600px) {
+  .card {
+    flex: 1 1 calc(50% - 2rem);
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .card {
+    flex: 1 1 calc(33% - 2rem);
+  }
 }
