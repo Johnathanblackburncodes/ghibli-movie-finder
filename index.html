@@ -18,12 +18,18 @@
       <nav class="container">
         <ul>
           <li class="btn">
-            <a href="http://www.ghibli-museum.jp/en/" target="_blank"
+            <a href="http://www.ghibli.jp/" target="_blank"
               >Visit Studio Ghibli</a
             >
           </li>
           <li class="nav-item"><a href="#films">Films</a></li>
-          <li class="nav-item"><a href="#">History</a></li>
+          <li class="nav-item">
+            <a
+              href="https://en.wikipedia.org/wiki/Studio_Ghibli"
+              target="_blank"
+              >History</a
+            >
+          </li>
         </ul>
         <img class="logo" src="../ghibli-movie-web-app/img/logo.png" />
       </nav>
@@ -83,7 +89,6 @@
               />
             </div>
             <div class="slider__item">
-              <p>Princess Mononoke</p>
               <img
                 src="https://www.gstatic.com/tv/thumb/v22vodart/127896/p127896_v_v8_ad.jpg"
                 alt=""
@@ -124,42 +129,8 @@
         <!-- End of Slider content  -->
       </section>
       <section class="api-temp"></section>
-      <section class="form">
-        <div class="main-container">
-          <form>
-            <select id="films" name="ghibli">
-              <option value="58611129-2dbc-4a81-a72f-77ddfc1b1b49"
-                >My Neighbor Totoro</option
-              >
-              <option value="2baf70d1-42bb-4437-b551-e5fed5a87abe"
-                >Castle in the Sky</option
-              >
-            </select>
-            <input type="submit" value="Search The Collection" />
-          </form>
-      </section>
-      <section class="info">
-        <div class="main-container">
-          <div class="intro-wrap">
-            <div>
-              <h3 class="title">Princess Mononoke</h3>
-              <p class="release">1997</p>
-            </div>
-            <div>
-              <p class="description">
-                While protecting his village from a rampaging boar-god, the
-                young warrior Ashitaka becomes afflicted with a deadly curse. To
-                find the cure that will save his life, he journeys deep into
-                sacred depths of the Great Forest Spirit's realm where he meets
-                San (Princess Mononoke), a girl raised by wolves. It's not long
-                before Ashitaka is caught in the middle of a battle between
-                iron-ore prospecting humans and the forest dwellers. He must
-                summon the spirit-powers and all his courage to stop man and
-                nature from destroying each other.
-              </p>
-            </div>
-          </div>
-        </div>
+      <section class="film-info">
+        <div id="root"></div>
       </section>
     </main>
     <footer>
