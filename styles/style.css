@@ -1,12 +1,16 @@
+/* Layout */
+
 body {
   margin: 0;
   display: flex;
   flex-direction: column;
   font-family: Helvetica, sans-serif;
 }
+
 main {
   height: 100%;
 }
+
 /* Buttons  */
 .btn {
   background-color: #1dafed;
@@ -68,6 +72,12 @@ nav ul {
   padding: 0;
 }
 
+@media screen and (max-width: 830px) {
+  nav ul {
+    display: none;
+  }
+}
+
 nav li {
   padding-right: 23px;
   color: #ffffff;
@@ -98,9 +108,12 @@ nav .logo {
   nav .logo {
     width: 10rem;
     height: 5rem;
+    right: 0;
+    left: 1%;
   }
 }
-/* body  */
+
+/* Layout */
 
 .main-container {
   margin: 0 auto;
@@ -156,6 +169,7 @@ section.info {
   .card-sticky {
     position: relative;
     margin-bottom: 20px;
+    width: 21rem;
   }
 }
 
@@ -196,9 +210,82 @@ section.slide-bg {
   padding-top: 1%;
 }
 
+.api-temp {
+  height: 18rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #eeeeee;
+}
+
 @media screen and (min-width: 1340px) {
   .slide-bg {
     max-height: 32rem;
+  }
+}
+
+@media screen and (max-width: 1339px) {
+  .slide-bg {
+    max-height: 29rem;
+  }
+
+  .api-temp {
+    height: 16rem;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .slide-bg {
+    max-height: 24rem;
+  }
+
+  .api-temp {
+    height: 14rem;
+  }
+}
+
+@media screen and (max-width: 840px) {
+  .slide-bg {
+    max-height: 23rem;
+  }
+  .api-temp {
+    height: 12rem;
+  }
+}
+
+@media screen and (max-width: 630px) {
+  .slide-bg {
+    max-height: 20rem;
+  }
+}
+
+@media screen and (min-width: 1341px) {
+  .api-temp {
+    height: 23rem;
+  }
+}
+
+@media screen and (min-width: 1341px) {
+  .api-temp {
+    height: 23rem;
+  }
+}
+
+@media screen and (min-width: 1450px) {
+  .slide-bg {
+    max-height: 36rem;
+  }
+}
+
+@media screen and (min-width: 1800px) {
+  .slide-bg {
+    max-height: 40rem;
+  }
+}
+
+@media screen and (min-width: 2000px) {
+  .slide-bg {
+    max-height: 44rem;
   }
 }
 
@@ -223,14 +310,6 @@ section.slide-bg {
 .slider__item > img {
   width: 100%;
   height: auto;
-}
-
-.api-temp {
-  height: 18rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: #eeeeee;
 }
 
 .slick-prev {
@@ -276,7 +355,7 @@ section.film-info {
   padding: 80px 0 80px 0px;
 }
 
-#root {
+#film-list {
   max-width: 1200px;
   margin: 0 auto;
 }
