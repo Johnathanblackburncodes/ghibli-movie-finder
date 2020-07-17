@@ -17,6 +17,9 @@ First Thoughts:
 
 # Screenshots
 
+![picture](img/sc1.png)
+![picture](img/sc2.png)
+
 # Getting Started
 [Click here](https://johnathanblackburncodes.github.io/ghibli-movie-finder/) to open app in browser
 
