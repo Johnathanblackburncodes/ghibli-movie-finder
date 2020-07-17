@@ -1,6 +1,6 @@
 const filmList = $("#film-list");
-
 const container = document.createElement("div");
+
 container.setAttribute("class", "container");
 
 filmList.append(container);
@@ -25,7 +25,6 @@ request.onload = function () {
 
       const slide = document.createElement("div");
       slide.setAttribute("class", "slider__item");
-
       container.appendChild(card);
       card.appendChild(h3);
       card.appendChild(p);
