@@ -14,6 +14,7 @@ First Thoughts:
 - CSS
 - JavaScript
 - jQuery
+- Ajax
 
 # Screenshots
 
