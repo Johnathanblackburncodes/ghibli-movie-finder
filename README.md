@@ -17,7 +17,7 @@ Created by Johnathan Blackburn
 ![picture](img/sc2.png)
 
 # Getting Started
-[Click here](https://johnathanblackburncodes.github.io/ghibli-movie-finder/) to open app in browser
+[Click here](https://cocodes.github.io/ghibli-movie-finder/) to open app in browser
 
 # Roadmap
 - [] Redesign of the Site
