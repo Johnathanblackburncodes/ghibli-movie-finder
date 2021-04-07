@@ -3,7 +3,7 @@ Studio Ghibli Movie App
 Created by Johnathan Blackburn
 -----------
 
-# Techonlogies 
+# Technologies 
 
 - HTML
 - CSS
